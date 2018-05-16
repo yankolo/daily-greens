@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Daily Greens</title>
+</head>
+
+<body> 
+	<header> <!-- Logo and Title -->
+		<div id="logo-title-container">
+			<a href="index.html"><img src="pictures/weed-logo.png" alt="cannabis leaf"></a>
+			<img src="pictures/title.png" alt="Daily Greens Title">
+		</div>
+	</header> <!-- END OF Logo and Title -->
+	
+	<nav> <!-- Navigation bar (Home, Contact, About Us) -->
+		<ul>
+			<li>
+				<a class="navlink" href="index.html">home</a>
+			</li>
+			<li>
+				<a class="navlink" href="faq.html">FAQ</a>
+			</li>
+			<li>
+				<a class="navlink current-nav" href="contact.html">contact</a>
+			</li>
+			<li>
+				<a class="navlink" href="about_us.html">about us</a>
+			</li>
+		</ul>
+	</nav> <!-- END OF Navigation bar (Home, Contact, About Us) -->
+	
+	<div id="sitecontainer"> <!-- Contains Main and Aside -->
+		<main>
+			<h2>Contact Us</h2>
+            <div id=contact>
+                <p>If you have questions feel free to contact us!</p>
+                <form action="#">
+                    <label class="contact-label" for="name">Name</label>
+                        <input  type="text" id="name" name="name">
+                    <label class="contact-label" for="email">Email</label>
+                        <input type="text" id="email" name="email">
+                    <label class="contact-label" for="message">Message</label>
+                        <textarea id="message" name="message" rows="10" cols="30"></textarea>
+                    <input id="submit_button" type="submit" value="Submit">
+                </form>
+            </div>
+		</main>
+		
+		<aside class="clearfix"> <!-- Aside -->
+			<div class="sidebar-element">
+				<h3>Who are we? </h3>
+				<div id="user-icons">
+					<img class="user" src="pictures/user.png" alt="user icon"> <!-- Source: http://www.flaticon.com/authors/icon-works -->
+					<img class="user" src="pictures/user.png" alt="user icon"> <!-- Source: http://www.flaticon.com/authors/icon-works -->
+					<p class="user-name" id="yanik">Yanik</p><p class="user-name" id="peter">Peter</p>
+				</div>
+				<p class="sidebar-text">We are Yanik and Peter. We are students in Computer Science and Technology. We are experts in the marijuana field.</p>
+			</div>
+		</aside> <!-- END OF Aside -->
+	</div> <!-- END OF Main of aside -->
+
+	<footer> <!-- Footer -->
+		<div id="footer-container">
+			<ul>
+				<li>
+					<a class="footer-link" href="index.html">home</a>
+				</li>
+                <li>
+					<a class="footer-link" href="faq.html">FAQ</a>
+				</li>
+				<li>
+					<a class="footer-link" href="contact.html">contact</a>
+				</li>
+				<li>
+					<a class="footer-link" href="about_us.html">about us</a>
+				</li>
+			</ul>
+			<p>Website proudly made by Yanik Kolomatski and Peter D'Addetta</p>
+		</div> 
+	</footer> <!-- END OF Footer -->
+</body>
+
+</html>

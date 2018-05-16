@@ -1,0 +1,523 @@
+/* Resetting defaults */
+body, header, nav, aside, main, footer, p, h1, h2, h3, h4, h5, h6, div, a, ul, ol, li , img, dl, dd, dt, figure {
+	margin: 0;
+	padding: 0;
+}
+
+/* Style for body tag */
+
+body {
+	min-width: 900px;
+	position: relative;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	background-color: #ECECEA;
+	line-height: 1.5;
+    overflow-y: scroll;
+}
+
+/* End of style for body tag */
+
+/* Start of styling for header */
+
+header {
+	width: 100%;
+	height: 130px;
+	background-color: #74AFAD;
+}
+
+#logo-title-container {
+	width: 870px;
+	height: 85px;
+	margin: auto;
+	padding: 10px;
+}
+
+/* End of styling for header */
+
+/* Start of styling for navigation bar */
+
+nav {
+	width: 900px;
+	height: 50px;
+	margin: auto;
+	background-color: #558C89;
+	position: relative;
+	top: -25px;
+	margin-bottom: -25px;
+	border-radius: 5px;
+	z-index: 1;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	
+	/* Style for nav font */
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: capitalize;
+	font-variant: small-caps;
+	font-size: 0;
+	letter-spacing: -1px;
+}
+
+
+a.navlink {
+    font-size: 20px;
+	text-decoration: none;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 50px; 
+	height: 100%;
+	width: 120px;
+	color: #ECECEA;
+	background-color: #558C89;
+	display: inline-block;
+}
+
+
+a.navlink:hover, a.navlink:active {
+	background-color: #1B5C5A;
+}
+
+a.current-nav {
+    background-color: #1B5C5A;
+    font-weight: bold;
+}
+
+
+nav li:first-child a.navlink{
+	border-radius: 5px 0 0 5px;
+}
+
+nav ul {
+	list-style-type: none;
+}
+
+nav li{
+	display: inline;
+    padding: 0;
+}
+
+/* End of styling for navigation bar */
+
+#sitecontainer {
+	width: 890px;
+	overflow-y: auto;
+	margin: auto;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	position: relative;
+}
+
+main, article {
+	box-sizing: border-box;
+	float: left;
+	width: 70%;
+	height: 100%;
+	border-right: 1px solid rgba(128, 128, 128, .2);
+}
+
+/* Start of styling for sidebar */
+
+aside {
+	box-sizing: border-box;
+	padding: 0 10px 10px 10px;
+	float: left;
+	width: 29.8%;
+	height: 100%;
+}
+
+aside h3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-variant: small-caps;
+	letter-spacing: -1px;
+	font-weight: normal;
+	text-align: center;
+	color: #D9853B;
+	text-decoration: underline;
+	
+}
+
+.sidebar-element {
+	border-bottom: 1px solid rgba(128, 128, 128, .2);
+}
+
+.sidebar-element p.user-name {
+	display: inline;
+}
+
+.sidebar-element p.sidebar-text {
+	margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#yanik {
+	padding-left: 12px
+}
+
+#peter {
+	padding-left: 25px
+}
+
+#user-icons {
+	width: 130px;
+	margin: auto;
+}
+
+img.user {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+/* End of styling for sidebar */
+
+/* General clearfix hack decleration for floating elements */
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* End of clearfix hack decleration for floating elements */
+
+/* Start of styling for small article summaries on index page */
+
+.article-short {
+	width: 604px;
+	overflow: auto; 
+	box-sizing: border-box;
+	border-bottom: 1px solid rgba(128, 128, 128, .2);
+}
+
+div.article-short:first-child .thumbnail {
+	width: 170px;
+}
+
+.thumbnail {
+	width: 130px;
+	display: block;
+	margin: 10px;
+	float: left;
+}
+
+
+.article-short h3 {
+	text-transform: capitalize;
+	letter-spacing: 0; 
+	font-size: 1.17em;
+	margin: 10px 0 0 0;
+	font-weight: normal;
+	color: #D9853B;
+}
+
+.article-short h3:hover {
+    color: #924806;;
+}
+
+a.title-link {
+    text-decoration: none;
+}
+
+a.readmore {
+    text-decoration: none;
+}
+
+a.readmore:hover {
+    text-decoration: underline;
+}
+
+
+.clock {
+	width: 12px;
+}
+
+p.date {
+	display: inline;
+}
+
+.article-short p.article-summary {
+	padding: 0;
+	font-size: 80%;
+	
+}
+
+/* End of styling for small article summaries on index page */
+
+/* Start of styling for footer */
+
+footer {
+	background-color: #74AFAD;
+	width: 100%;
+	height: 100px;
+	position: relative;
+}
+
+#footer-container {
+	text-align: center;
+	width: 870px;
+	height: 70px;
+	margin: auto;
+	padding: 15px;
+}
+
+#footer-container ul {
+	list-style-type: none;
+}
+
+#footer-container li {
+	display: inline;
+	text-transform: capitalize;
+	padding: 5px 10px 8px 10px;
+	border-right: 1px solid rgba(0, 0, 0, 0.3);;
+}
+
+#footer-container li:last-child {
+	border-right:0
+}
+
+#footer-container a {
+	text-decoration: none;
+	color: #ECECEA;
+}
+
+#footer-container a:hover {
+	color: #1B5C5A;
+}
+
+#footer-container p {
+	position: relative;
+	top: 30px;
+}
+
+/* End of styling for footer */
+
+/* Start of styling for article pages */
+
+article, main {
+	padding: 15px;
+}
+
+main.index {
+    padding: 0px
+}
+
+article h2, main h2 {
+	text-transform: capitalize;
+	font-size: 1.5em;
+	letter-spacing: 0; 
+	margin: 0;
+	font-weight: normal;
+	color: #D9853B
+}
+
+
+p.article-second-header {
+    color: #767677;
+    font-weight: normal;
+    border-bottom: 1px solid rgba(128, 128, 128, .2);
+    margin-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+video {
+    width: 100%;
+}
+
+img#main-article-picture{
+    overflow-y: auto;
+    width: 592px;
+    margin-top: 15px
+}
+
+.side-pic {
+	width: 250px;
+}
+
+figure.right-side-pic {
+	float: right;
+	margin: 0 0 15px 15px;
+}
+
+figure.left-side-pic {
+	float: left;
+	margin: 0 15px 15px 0;
+}
+
+figcaption {
+	font-size: 90%;
+}
+
+#article-text, #faq, #about_us, #contact {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+p.article-paragraph {
+	margin-bottom: 15px;
+}
+
+/* End of styling for article pages */
+
+/* *** Start of styling of "Previous" and "Next" link buttons *** */
+
+.button-container {
+	box-sizing: border-box;
+	width: 45%;
+	overflow-y: auto;
+	margin-top: 15px;
+}
+
+.button-container  img{
+	display: block;
+}
+
+.button-container p.arrow-text {
+	display: block;
+	height: 24px;
+	margin-left: 5px;
+	margin-top: 1px;
+	font-size: 24px;
+	line-height: 100%;
+}
+
+#back-button-container, #back-button-container img, #back-button-container p {
+	float: left;
+}
+
+#next-button-container, #next-button-container img, #next-button-container p {
+	float: right;
+}
+
+.button-container p.arrow-text {
+	color: black;
+}
+
+#back-button-container p.arrow-text {
+	width: 100px
+}
+
+#next-button-container p.arrow-text {
+	width: 56px;
+}
+
+.button-icon-container {
+	box-sizing: border-box;
+	padding: 0 0 0 5px;
+	width: 100%;
+	height: 30px;
+}
+
+p.button-article-title {
+	margin: 0 10px 0 10px;
+}
+
+.button-container p.button-article-title {
+	color: #D9853B
+}
+
+#back-button-container p {
+	text-align: left;
+}
+
+#next-button-container p.button-article-title {
+	text-align: right;
+}
+
+.button-container:hover > p.button-article-title {
+	color: #924806;
+}
+
+/* *** End of styling of "Previous" and "Next" link buttons *** */
+
+/* *** Start of styling for FAQ *** */
+
+dt.faq-question, dd.faq-answer {
+    margin-left: -15px;
+    padding-left: 15px
+}
+
+dt.faq-question {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+dd.faq-answer {
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(128, 128, 128, .2);
+}
+
+/* *** End of styling for FAQ *** */
+
+/* *** Start of styling for Contact Form *** */
+
+label.contact-label {
+    display: inline-block;
+    margin: 15px 0;
+}
+
+input[type=text], #message {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 20px;
+}
+
+input[type=submit] {
+    width: 100px;
+    height: 40px;
+    background-color: #558C89;
+    border: none;
+    color: #ECECEA;
+    font-size: 16px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    margin: 15px 0 15px 0;
+}
+
+input[type=submit]:hover {
+    background-color: #1B5C5A;
+}
+
+/* *** End of styling for Contact Form *** */
+
+/* *** Start of style of table *** */
+
+table {
+    border-collapse: collapse;
+    width: 85%;
+    text-align: left;
+}
+
+th, td {
+    height: 41px;
+    padding: 5px 15px 0px 5px ;
+    border-right: 1px solid rgba(128, 128, 128, .2);
+    border-bottom: 1px solid rgba(128, 128, 128, .2);
+}
+
+th:last-child, td:last-child {
+    border-right: 0;
+}
+
+th.last-side-th {
+	border-bottom: none
+}
+
+tr:hover {
+    background-color: #C1C1BC;
+}
+
+tr:last-child td {
+    border-bottom: 0;
+}
+
+/* *** End of style of table *** */
+
+
+
+
+
+
+
+
+
+
+
