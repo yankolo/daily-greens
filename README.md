@@ -1,0 +1,1 @@
+This project was the final assignment in the introduction course to HTML/CSS in Dawson College. The goal of the assignment was to create a static website about marijuana in teams of 2 in 2 weeks. I was in charge of the website design and most of the HTML.
